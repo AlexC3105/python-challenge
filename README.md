@@ -107,10 +107,10 @@ Complete the following steps:
 - If the sales_item in sales is equal to the item in menu, capture the quantity from the sales data and the price and cost from the menu data to calculate the profit for each item.
 - Cumulatively add the values to the corresponding metrics in the report like so:
 
-report[sales_item]["01-count"] += quantity
-report[sales_item]["02-revenue"] += price * quantity
-report[sales_item]["03-cogs"] += cost * quantity
-report[sales_item]["04-profit"] += profit * quantity
+- report[sales_item]["01-count"] += quantity
+- report[sales_item]["02-revenue"] += price * quantity
+- report[sales_item]["03-cogs"] += cost * quantity
+- report[sales_item]["04-profit"] += profit * quantity
 
 - Else print the message "{sales_item} does not equal {item}! NO MATCH!".
 - Write out the contents of the report dictionary to a text file. The report should output each ramen type as the keys and 01-count, 02-revenue, 03-cogs, and 04-profit metrics as the values for every ramen type as shown in the assignment details.
